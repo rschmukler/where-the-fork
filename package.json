@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "slurpee": "~0.1.4",
-    "gulp": "~3.8.7"
+    "gulp": "~3.8.7",
+    "co-fs": "~1.2.0"
   }
 }
