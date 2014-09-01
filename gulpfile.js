@@ -1,4 +1,4 @@
-lurpee = require('slurpee');
+var slurpee = require('slurpee');
 
 slurpee.config.assetPaths = [
   'lib/{site-wide}/**/*',
@@ -23,6 +23,9 @@ slurpee.config.stylPaths = [
   'lib/components/**/*.styl',
   'lib/pages/**/*.styl',
 ];
+
+slurpee.config.cssFile = 'css/app.css';
+slurpee.config.jsFile = 'js/app.js';
 
 slurpee.config.serverJadePaths = [];
 slurpee.config.useBower = true;
