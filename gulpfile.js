@@ -7,7 +7,7 @@ slurpee.config.assetPaths = [
 ];
 
 slurpee.config.jsPaths = [
-  'lib/site-wide/what-the-fork.js',
+  'lib/site-wide/where-the-fork.js',
   'lib/{components,pages,filters,services}/**/*.js'
 ];
 
