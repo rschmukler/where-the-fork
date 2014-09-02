@@ -17,6 +17,7 @@
   "dependencies": {
     "angular": "~1.2.23",
     "ui-router": "~0.2.11",
-    "ionicons": "~1.5.2"
+    "ionicons": "~1.5.2",
+    "angularjs-geolocation": "~0.1.1"
   }
 }

@@ -1,6 +1,9 @@
 #search-page
   #search-box
-    h1 Where can we find you the best?
+    h1 Howdy, Govna', where are ya?
     form(name="searchForm")
-      input#location.nice(type="text", ng-model="search", required=true, placeholder="123 Bedford Ave, Brooklyn, NY")
-      button#search.nice.blue(ng-click="search()") Find it
+      .icon-input
+        input#location.nice(type="text", ng-model="search.location", required=true, placeholder="123 Bedford Ave, Brooklyn, NY")
+        i.ion.ion-android-search
+        i#locate-me.clickable.ion.ion-android-locate(ng-click="search.locate()")
+      button#search.nice.blue(ng-click="search.search()") Lets go

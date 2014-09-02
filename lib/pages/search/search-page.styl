@@ -3,12 +3,18 @@
     margin: 20px 0
     display: flex
     justify-content: center
-    input#location
+    .icon-input
       flex: 7
+      margin-right: 10px
+      i
+        color: $colors.fontLight
+      input
+        width: 100%
     button#search
       flex: 1
 
 #search-box
+  extend: %shadowed
   box-sizing: border-box
   background-color: white
   margin: auto
@@ -24,3 +30,9 @@
     font-weight: 100
     text-align: center
     color: #777
+
+  #locate-me
+    left: auto
+    right: 0.7em
+    padding: 0.2em
+    top: 0.8em

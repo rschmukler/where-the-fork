@@ -4,18 +4,50 @@ html,body,#root
   height: 100%
   width: 100%
 body
-  background-color: #2d3e4f
+  background-color: $colors.background
   font-family: 'Helvetica Neue', 'Helvetica', arial, sans-serif
-  color: #3d3d3d
+  color: $colors.fontDark
 
 @media(min-width: 1024px)
   #root
     margin: 20px auto
     width: 60%
 
+.icon-input
+  position: relative
+  display: inline
+  i
+    position: absolute
+    left: 0.5em
+    top: 1em
+    color: $colors.fontLight
+  input.nice
+    padding-left: 1.4em
+
 input.nice
-  box-shadow: inset 0px 1px 3px 1px rgba(black, 0.1)
+  extend: %shadowed
+  font-weight: 200
+  border-radius: 6px
+  color: $colors.fontLight
   font-size: 1.4em
-  border: 1px solid #ddd
   background-color: #eee
   padding: 0.4em 1em
+  border: none
+  outline: none
+  &:focus
+    box-shadow: 0px 0px 0px 3px rgba($colors.blue, 0.8)
+
+button.nice
+  extend: %shadowed
+  border: none
+  border-radius: 6px
+  &.blue
+    background-color: $colors.blue
+    color: white
+    &:hover
+      cursor: pointer
+      background-color: lighten($colors.blue, 8%)
+
+i.ion.clickable:hover
+  cursor: pointer
+  color: $colors.blue !important
